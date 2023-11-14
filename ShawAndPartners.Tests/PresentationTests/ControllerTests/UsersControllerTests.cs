@@ -8,6 +8,9 @@ using Xunit;
 
 namespace ShawAndPartners.Tests.PresentationTests.ControllerTests
 {
+    /// <summary>
+    /// Tests carried out following the AAA standard.
+    /// </summary>
     public class UsersControllerTests
     {
         private readonly Mock<IUserService> _userServiceMock;
@@ -72,7 +75,6 @@ namespace ShawAndPartners.Tests.PresentationTests.ControllerTests
             Assert.IsType<NotFoundObjectResult>(result);
         }
 
-
         [Fact]
         public async Task GetAllUsers_WhenUsersExist_ReturnsAllUsers()
         {
@@ -90,7 +92,12 @@ namespace ShawAndPartners.Tests.PresentationTests.ControllerTests
         public async Task UpdateUser_WhenUserDoesNotExist_ReturnsNotFound()
         {
             var name = "nonexistent";
-            var userUpdateDto = new UserUpdateDto { /* inicialize propriedades */ };
+            var userUpdateDto = new UserUpdateDto 
+            { 
+                City = "Pasadena",
+                Country = "United States",
+                FavoriteSport = "Football"
+            };
             _userServiceMock.Setup(service => service.UpdateUserAsync(name, userUpdateDto))
                             .ReturnsAsync(false);
 
@@ -111,5 +118,4 @@ namespace ShawAndPartners.Tests.PresentationTests.ControllerTests
             Assert.IsType<NotFoundObjectResult>(result);
         }
     }
-
 }
