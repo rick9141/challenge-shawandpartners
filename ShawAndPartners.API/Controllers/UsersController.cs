@@ -50,7 +50,7 @@ namespace ShawAndPartners.API.Controllers
         public async Task<IActionResult> GetAllUsers()
         {
             var users = await _userService.GetAllAsync();
-            if (users is null)
+            if (users == null || !users.Any())
             {
                 return NotFound("Users not found.");
             }
