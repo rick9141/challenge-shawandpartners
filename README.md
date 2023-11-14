@@ -15,7 +15,7 @@
  - Execute the following command line: dotnet run --project ShawAndPartners.API
 ### Running tests:
   - In Visual Studio, open the terminal in the default solution folder "challenge-shawandpartners"
-  - Execute the following command line: dotnet tests --project ShawAndPartners.Tests
+  - Execute the following command line: dotnet test ShawAndPartners.Tests
     
 ## Technologies & Frameworks used ⚙
 -   .NET 7
