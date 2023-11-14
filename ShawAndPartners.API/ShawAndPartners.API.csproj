@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	<TargetFramework>net7.0</TargetFramework>
+	<Nullable>enable</Nullable>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.9" />
+	<PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.6" />
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	<None Include="bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml" Pack="true" PackagePath="." />
+  </ItemGroup>
+
+  <ItemGroup>
+	<ProjectReference Include="..\ShawAndPartners.Application\ShawAndPartners.Application.csproj" />
+	<ProjectReference Include="..\ShawAndPartners.Infrastructure.Database\ShawAndPartners.Infrastructure.Database.csproj" />
+  </ItemGroup>
+
+</Project>
