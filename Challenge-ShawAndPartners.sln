@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShawAndPartners.Infrastruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShawAndPartners.Infrastructure.Database", "ShawAndPartners.Infrastructure.Database\ShawAndPartners.Infrastructure.Database.csproj", "{EF407023-F679-4F26-ABA1-CCA314FA2326}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{6EEE3EAB-FBC3-4628-B063-DA423FC641B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShawAndPartners.Tests", "ShawAndPartners.Tests\ShawAndPartners.Tests.csproj", "{D03AB9E4-4E45-43D6-B5D8-DBE7A8007697}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,10 @@ Global
 		{EF407023-F679-4F26-ABA1-CCA314FA2326}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF407023-F679-4F26-ABA1-CCA314FA2326}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF407023-F679-4F26-ABA1-CCA314FA2326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D03AB9E4-4E45-43D6-B5D8-DBE7A8007697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03AB9E4-4E45-43D6-B5D8-DBE7A8007697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03AB9E4-4E45-43D6-B5D8-DBE7A8007697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03AB9E4-4E45-43D6-B5D8-DBE7A8007697}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +65,7 @@ Global
 		{2AF2397E-6432-4841-8AFE-2C596B9F7C54} = {CE1342A3-C388-4178-A1B7-2F79CF1869B0}
 		{A2AEC668-E818-4A69-9BD1-2023950AA04C} = {1515813A-B371-40CE-9426-95B4807CCD93}
 		{EF407023-F679-4F26-ABA1-CCA314FA2326} = {1515813A-B371-40CE-9426-95B4807CCD93}
+		{D03AB9E4-4E45-43D6-B5D8-DBE7A8007697} = {6EEE3EAB-FBC3-4628-B063-DA423FC641B1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B7F1E93-F4A7-4920-BFF1-948FDF187D40}
